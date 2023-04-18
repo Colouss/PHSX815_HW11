@@ -5,7 +5,7 @@ rolls = np.random.randint(1, 6, size=n) # Roll the dice n times and calculate th
 avg = [ ]
 for i in range(1, n+1):
     avg.append(np.mean(rolls[:i]))
-plt.hist(avg, bins=50)
+plt.hist(avg, bins=100)
 plt.title("Distribution of the average for the rolls")
 plt.xlabel("Average of Outcomes")
 plt.ylabel("Frequency")
