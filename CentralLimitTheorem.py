@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 n = 10000 # Define the number of dice rolls
 rolls = np.random.randint(1, 6, size=n) # Roll the dice n times and calculate the mean of the outcomes
 avg = [ ]
-for i in range(1, n+1):
+for i in range(1, 20000):
     avg.append(np.mean(rolls[:i]))
 plt.hist(avg, bins=100)
 plt.title("Distribution of the average for the rolls")
